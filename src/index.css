@@ -1,0 +1,20 @@
+table, td
+{
+    border: 1px solid black;
+}
+.touche, .clear, .resultat, .del, .complex
+{
+    padding: 10px;
+    background-color: white;
+}
+table
+{
+    background-color: #90EEFF;
+    padding: 15px;
+}
+.result
+{
+    background-color: white;
+    padding: 20px;
+    width: 20%;
+}
