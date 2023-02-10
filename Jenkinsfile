@@ -13,13 +13,17 @@ pipeline {
      
     stage('Install dependencies') {
       steps {
-        pwsh 'npm install'
+        withNode(nodejs : 'node') {
+                bat'npm install'
+            }
       }
     }  
       
     stage('Run Test') {
       steps {
-        pwsh 'npm run test'
+        withNode(nodejs: 'node') {
+        bat 'npm run test'
+        }
       }
     }
   }
