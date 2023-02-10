@@ -13,17 +13,13 @@ pipeline {
      
     stage('Install dependencies') {
       steps {
-        withNode(nodejs : 'node') {
-                bat'npm install'
-            }
+        sh 'npm install'
       }
     }  
       
     stage('Run Test') {
       steps {
-        withNode(nodejs: 'node') {
-        bat 'npm run test'
-        }
+        sh 'npm run test'
       }
     }
   }
