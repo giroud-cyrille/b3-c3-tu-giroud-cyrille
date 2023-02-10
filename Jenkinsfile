@@ -13,13 +13,13 @@ pipeline {
      
     stage('Install dependencies') {
       steps {
-        sh 'npm install'
+        pwsh 'npm install'
       }
     }  
       
     stage('Run Test') {
       steps {
-        sh 'npm run test'
+        pwsh 'npm run test'
       }
     }
   }
